@@ -8,3 +8,30 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
 }
+ul {
+  list-style: none;
+}
+.gallery {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1128px;
+  padding: 0;
+}
+
+.gallery-item {
+  width: 360px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 250ms ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.04);
+}
