@@ -11,9 +11,7 @@ export default defineConfig(({ command }) => {
   return {
     // base для GitHub Pages береться з назви репозиторію під час деплою;
     // локально (без GITHUB_REPOSITORY) — '/'
-    base: process.env.GITHUB_REPOSITORY
-      ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/`
-      : '/',
+    base: '/goit-js-hw-09/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },

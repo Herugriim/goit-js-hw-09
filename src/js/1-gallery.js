@@ -1,4 +1,4 @@
-import SimpleLightbox from 'simplelightbox';
+import { default as SimpleLightboxModule } from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
@@ -87,7 +87,7 @@ const markup = images
 
 gallery.insertAdjacentHTML('beforeend', markup);
 
-const lightbox = new SimpleLightbox('.gallery-link', {
+const lightbox = new SimpleLightboxModule.default('.gallery-link', {
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
