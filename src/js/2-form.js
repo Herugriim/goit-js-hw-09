@@ -1,10 +1,10 @@
-const form = document, querySelector('.feedback-form');
+const form = document.querySelector('.feedback-form');
 const formData = {
-    email: '',
-    message: '',
-
-}
+  email: '',
+  message: '',
+};
 
 form.addEventListener('input', event => {
-    const { name, value } = event.target;
-})
+  const { name, value } = event.target;
+  formData[name] = value.trim();
+});
