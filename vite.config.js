@@ -13,7 +13,7 @@ export default defineConfig(({ command }) => {
     // локально (без GITHUB_REPOSITORY) — '/'
     base: '/goit-js-hw-09/',
     define: {
-      [command === 'serve' ? 'global' : '_global']: {},
+      global: 'globalThis',
     },
     root: sourceRoot,
     build: {
